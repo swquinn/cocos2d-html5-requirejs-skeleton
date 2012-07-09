@@ -13,19 +13,4 @@ var appConfig = {
 	 * development code.
 	 */
 	isDebug: false,
-	
-	/* (non-JSDoc)
-	 * Whether or not to use require JS.
-	 */
-	useRequireJs: true,
-	
-	/* (non-JSDoc)
-	 * The modules supported when loading 
-	 */
-	modules: {
-		'cocos2d-0.5.0-alpha2': {
-			version: '0.5.0-alpha2',
-			path: 'lib/dev/cocos2d-html5-v0.5.0-alpha2/'
-		}
-	}
 }

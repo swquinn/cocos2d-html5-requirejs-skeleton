@@ -3,14 +3,17 @@ var require = {
 	paths: {
 		// ** Application
 		'Assets': 'assets/js',
+		'Data': 'assets/data',
+		'Plugins': 'assets/js/Plugins',
 		
 		// ** Vendor(s)
 		'backbone': 'lib/backbone-0.9.2.min',
 		'box2d': 'lib/box2dweb-2.1.a.3.min',
-		'cocos2d': appConfig.isDebug
-				? 'cocos2d' : 'lib/cocos2d-html5-canvas-0.5.0.alpha2.min',
-		'domReady': 'lib/domReady-2.0.0',
+		'cocos2d': 'assets/js/Plugins/cocos2d',
+		//appConfig.isDebug ? 'cocos2d' : 'lib/cocos2d-html5-canvas-0.5.0.alpha2.min',
+		'domReady': 'lib/requirejs-plugin-domReady-2.0.0',
 		'jquery': 'lib/jquery-1.7.2.min',
+		'text': 'lib/requirejs-plugin-text-2.0.1',
 		'underscore': 'lib/underscore-1.3.3.min'
 	},
 
@@ -23,6 +26,7 @@ var require = {
 	 */
 	shim: {
 		'cocos2d': {
+			deps: ['backbone'],
 			exports: 'cc'
 		},
 		'box2d': {

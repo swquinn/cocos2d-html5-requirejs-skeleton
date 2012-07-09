@@ -1,0 +1,33 @@
+/* (non-JSDoc)
+ * A .manifest file represents a means of loading a series of JavaScript files
+ * with specified metadata including the version and path to the files, as well
+ * as specifying an optional load function declaration. If the load function is
+ * specified the manifest loader will attempt to use that method for file
+ * loading.
+ *
+ * - id: the identifier for this manifest.
+ *
+ * - verbose: (Optional) whether this manifest should be verbose with its
+ *       logging when it is processed. Defaults to `false'.
+ *
+ * - version: (Optional) the version of the files of this manifest. 
+ *
+ * - path: (Optional) the base path of the files specified by this
+ *       manifest. Defaults to current directory.
+ *
+ * - load: (Optional) the name of the function to use for loading. Defaults
+ *       to undefined, and is unused if not specified; instead resulting in
+ *
+ * - manifest: the list of files to be loaded.
+ */
+{
+	id: 'cocos2d',
+	verbose: false,
+	version: '0.5.0-alpha2',
+	path: 'lib/',
+	load: 'cc.loadjs',
+	manifest:
+	[
+		'cocos2d-html5-canvas-0.5.0.alpha2.min.js'
+	]
+}

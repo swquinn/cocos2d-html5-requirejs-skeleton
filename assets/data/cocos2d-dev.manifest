@@ -1,0 +1,109 @@
+/* (non-JSDoc)
+ * A .manifest file represents a means of loading a series of JavaScript files
+ * with specified metadata including the version and path to the files, as well
+ * as specifying an optional load function declaration. If the load function is
+ * specified the manifest loader will attempt to use that method for file
+ * loading.
+ *
+ * - id: the identifier for this manifest.
+ *
+ * - verbose: (Optional) whether this manifest should be verbose with its
+ *       logging when it is processed. Defaults to `false'.
+ *
+ * - version: (Optional) the version of the files of this manifest. 
+ *
+ * - path: (Optional) the base path of the files specified by this
+ *       manifest. Defaults to current directory.
+ *
+ * - load: (Optional) the name of the function to use for loading. Defaults
+ *       to undefined, and is unused if not specified; instead resulting in
+ *
+ * - manifest: the list of files to be loaded.
+ */
+{
+	id: 'cocos2d-dev',
+	verbose: true,
+	version: '0.5.0-alpha2',
+	path: 'lib/dev/cocos2d-html5-v0.5.0-alpha2/',
+	load: 'cc.loadjs',
+	manifest:
+	[
+		'cocos2d/platform/CCClass.js',
+		'cocos2d/platform/CCCommon.js',
+		'cocos2d/platform/platform.js',
+		'cocos2d/platform/ZipUtils.js',
+		'cocos2d/platform/base64.js',
+		'cocos2d/platform/gzip.js',
+		'cocos2d/platform/CCMacro.js',
+		'cocos2d/platform/CCFileUtils.js',
+		'cocos2d/platform/CCTypes.js',
+		'cocos2d/cocoa/CCGeometry.js',
+		'cocos2d/platform/CCConfig.js',
+		'cocos2d/cocoa/CCSet.js',
+		'cocos2d/cocoa/CCAffineTransform.js',
+		'cocos2d/support/CCPointExtension.js',
+		'cocos2d/base_nodes/CCNode.js',
+		'cocos2d/base_nodes/CCAtlasNode.js',
+		'cocos2d/textures/CCTexture2D.js',
+		'cocos2d/textures/CCTextureCache.js',
+		'cocos2d/textures/CCTextureAtlas.js',
+		'cocos2d/misc_nodes/CCRenderTexture.js',
+		'cocos2d/misc_nodes/CCProgressTimer.js',
+		'cocos2d/effects/CCGrid.js',
+		'cocos2d/effects/CCGrabber.js',
+		'cocos2d/actions/CCAction.js',
+		'cocos2d/actions/CCActionInterval.js',
+		'cocos2d/actions/CCActionInstant.js',
+		'cocos2d/actions/CCActionManager.js',
+		'cocos2d/actions/CCActionProgressTimer.js',
+		'cocos2d/actions/CCActionCamera.js',
+		'cocos2d/actions/CCActionEase.js',
+		'cocos2d/actions/CCActionGrid.js',
+		'cocos2d/actions/CCActionTiledGrid.js',
+		'cocos2d/actions/CCActionGrid.js',
+		'cocos2d/layers_scenes_transitions_nodes/CCScene.js',
+		'cocos2d/layers_scenes_transitions_nodes/CCLayer.js',
+		'cocos2d/layers_scenes_transitions_nodes/CCTransition.js',
+		'cocos2d/layers_scenes_transitions_nodes/CCTransitionRadial.js',
+		'cocos2d/layers_scenes_transitions_nodes/CCTransitionPageTurn.js',
+		'cocos2d/sprite_nodes/CCSprite.js',
+		'cocos2d/sprite_nodes/CCAnimation.js',
+		'cocos2d/sprite_nodes/CCAnimationCache.js',
+		'cocos2d/sprite_nodes/CCSpriteFrame.js',
+		'cocos2d/sprite_nodes/CCSpriteFrameCache.js',
+		'cocos2d/sprite_nodes/CCSpriteBatchNode.js',
+		'cocos2d/label_nodes/CCLabelAtlas.js',
+		'cocos2d/label_nodes/CCLabelTTF.js',
+		'cocos2d/label_nodes/CCLabelBMFont.js',
+		'cocos2d/particle_nodes/CCParticleSystem.js',
+		'cocos2d/particle_nodes/CCParticleSystemQuad.js',
+		'cocos2d/particle_nodes/CCParticleSystemPoint.js',
+		'cocos2d/particle_nodes/CCParticleExamples.js',
+		'cocos2d/touch_dispatcher/CCTouchDelegateProtocol.js',
+		'cocos2d/touch_dispatcher/CCTouchHandler.js',
+		'cocos2d/touch_dispatcher/CCTouchDispatcher.js',
+		'cocos2d/keypad_dispatcher/CCKeypadDelegate.js',
+		'cocos2d/keypad_dispatcher/CCKeypadDispatcher.js',
+		'cocos2d/text_input_node/CCIMEDispatcher.js',
+		'cocos2d/text_input_node/CCTextFieldTTF.js',
+		'cocos2d/CCDirector.js',
+		'cocos2d/CCCamera.js',
+		'cocos2d/CCScheduler.js',
+		'cocos2d/CCLoader.js',
+		'cocos2d/CCDrawingPrimitives.js',
+		'cocos2d/platform/CCApplication.js',
+		'cocos2d/platform/CCSAXParser.js',
+		'cocos2d/platform/AppControl.js',
+
+		'cocos2d/menu_nodes/CCMenuItem.js',
+		'cocos2d/menu_nodes/CCMenu.js',
+
+		'cocos2d/tileMap_parallax_nodes/CCTMXTiledMap.js',
+		'cocos2d/tileMap_parallax_nodes/CCTMXXMLParser.js',
+		'cocos2d/tileMap_parallax_nodes/CCTMXObjectGroup.js',
+		'cocos2d/tileMap_parallax_nodes/CCTMXLayer.js',
+		'cocos2d/tileMap_parallax_nodes/CCParallaxNode.js',
+
+		'CocosDenshion/SimpleAudioEngine.js'
+	]
+}
